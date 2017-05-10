@@ -1,0 +1,28 @@
+{
+  "name": "pgimport",
+  "description": "WIP: Import data from file to PostgreSQL database.",
+  "version": "0.0.0",
+  "keywords": [
+    "pgimport",
+    "import",
+    "postgres",
+    "database",
+    "db",
+    "json"
+  ],
+  "author": "Alexander Magtipon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zand3rs/pgimport.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "bin": {
+    "pgimport": "./index.js"
+  },
+  "dependencies": {
+  }
+}

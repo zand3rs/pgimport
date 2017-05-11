@@ -8,6 +8,8 @@ var run = require("./lib/run");
 var program = require("commander").command(package.name);
 var args = process.argv.slice(2);
 
+var localDir = "/tmp/" + package.name;
+
 //==============================================================================
 
 program
@@ -15,7 +17,7 @@ program
   .option("--connect <connect>", "Db connection string")
   .option("--from <from>", "Source folder or file")
   .option("--to <to>", "Destination table")
-  .option("--local-dir <local_dir>", "Local directory where remote files are synced, default=./tmp", "tmp")
+  .option("--local-dir <local_dir>", "Local directory where remote files are synced, default=" + localDir, localDir)
   .option("--access-key <access_key>", "AWS access key")
   .option("--secret-key <secret_key>", "AWS secret key")
   .option("--ignore-attrs <attrs_list>", "Ignore attributes")

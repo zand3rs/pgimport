@@ -21,6 +21,7 @@ program
   .option("--access-key <access_key>", "AWS access key")
   .option("--secret-key <secret_key>", "AWS secret key")
   .option("--ignore-attrs <attrs_list>", "Ignore attributes")
+  .option("--map <map_file>", "File path containing the attribute/field mapping")
   .option("-p, --processors <processors>", "Number of processors, default=1", function(v) {return _.toInteger(v)}, 1)
   .option("-r, --recursive [true|false]", "Recursive copy, default=false", function(v) {return v !== "false"}, false)
   .option("-f, --force [true|false]", "Non-interactive, default=false", function(v) {return v !== "false"}, false)

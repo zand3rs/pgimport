@@ -36,4 +36,5 @@ $ pgimport
 
 $ pgimport --connect='db@localhost' --to='public.logs' --from='/path/to/file.log'
 $ pgimport --connect='db@localhost' --to='public.logs' --from='/path/to/file.log.gz'
+$ pgimport --connect='db@localhost' --to='public.logs' --from='s3://bucket/folder' -r -f
 ```

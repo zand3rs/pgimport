@@ -1,7 +1,7 @@
 {
   "name": "pgimport",
   "description": "Import data from file to PostgreSQL database.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [
     "pgimport",
     "import",

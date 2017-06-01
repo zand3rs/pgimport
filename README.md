@@ -6,7 +6,7 @@ Import data from file to PostgreSQL database.
 ## Installation
 
 ```sh
-$ npm install -g pgimport
+$ npm install pgimport -g
 ```
 
 ## Usage
@@ -35,4 +35,5 @@ $ pgimport
 
 
 $ pgimport --connect='db@localhost' --to='public.logs' --from='/path/to/file.log'
+$ pgimport --connect='db@localhost' --to='public.logs' --from='/path/to/file.log.gz'
 ```

@@ -34,9 +34,9 @@ $ pgimport
     -d, --debug [true|false]       Show debug messages, default=false
 
 
-$ pgimport --connect='db@localhost' --to='public.logs' --from='/path/to/file.log'
-$ pgimport --connect='db@localhost' --to='public.logs' --from='/path/to/file.log.gz'
-$ pgimport --connect='db@localhost' --to='public.logs' --from='s3://bucket/folder' -r -f
+$ pgimport --connect='user@localhost' --to='public.logs' --from='/path/to/file.log'
+$ pgimport --connect='user@localhost' --to='public.logs' --from='/path/to/file.log.gz'
+$ pgimport --connect='user@localhost' --to='public.logs' --from='s3://bucket/folder' -r -f
 ```
 
 ## File Format
@@ -48,4 +48,22 @@ $ cat sample.log
 { "ts":"2017-06-01T01:14:09Z", "event":"pageview", "url":"http://www.abc.com" }
 { "ts":"2017-06-01T01:39:51Z", "event":"pageview", "url":"http://www.def.com" }
 { "ts":"2017-06-01T02:11:47Z", "event":"pageview", "url":"http://www.ghi.com" }
+```
+
+## Database Connection String
+
+The general form for a connection string:
+
+```sh
+[user[:password]@][netloc][:port][/dbname][?param1=value1&...]
+```
+Examples:
+
+```sh
+localhost
+localhost:5433
+localhost/mydb
+user@localhost
+user:secret@localhost
+other@localhost/otherdb?connect_timeout=10
 ```
